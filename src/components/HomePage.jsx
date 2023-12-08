@@ -9,7 +9,7 @@ const HomePage = () => {
   }, []);
 
   const fetchBooks = async () => {
-    const response = await fetch("http://localhost:8080/api/books/all");
+    const response = await fetch("http://localhost:8000/api/books/all");
     const data = await response.json();
     console.log(data);
     setBooks(data);
